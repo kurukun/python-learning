@@ -7,7 +7,7 @@ import json
 data = [{"name": "张一山", "age": 11}, {"name": "王小虎", "age": 12}, {"name": "赵一鸣", "age": 21}]
 print(data)
 # 将P数据转化为J数据 使用json.dumps()
-json_str = json.dumps(data, ensure_ascii=False)  # 有中文时要加入后面的参数，意思为不适用ASCII码去转换它
+json_str = json.dumps(data, ensure_ascii=False)  # 有中文时要加入后面的参数，意思为不使用ASCII码去转换它
 # 可见json本质上是字符串
 print(type(json_str))
 print(json_str)
